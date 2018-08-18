@@ -74,7 +74,7 @@ meanAndStdev <- (grepl("activityId" , columnNames) |
                          grepl("std.." , columnNames) 
 )
 
-# factoring the activity values
+# factoring the activity values for making tidy dataset
 
 datasetMegred$activity <- factor(datasetMegred$activity, levels = activityLabels[,1], labels = activityLabels[,2])
 datasetMegred$subject <- as.factor(datasetMegred$subject)
